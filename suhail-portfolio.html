@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Suhail</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #4a90e2, #50e3c2);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #4a90e2;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            margin: 10px 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #50e3c2;
+        }
+
+        /* Main Sections */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #4a90e2;
+            border-bottom: 3px solid #50e3c2;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about p {
+            font-size: 1.1rem;
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #4a90e2;
+        }
+        .project-card p {
+            font-size: 1rem;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background-color: #50e3c2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-info a {
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Muhammad Suhail</h1>
+        <p>Turning ideas into reality with code and creativity</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Muhammad Suhail, a tech enthusiast and problem solver. I love learning new skills, building projects, and turning complex ideas into simple, functional solutions. My focus is on web development, AI, and creating digital experiences that make an impact.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A clean, professional portfolio website to showcase my skills, projects, and ways to connect with me.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Restaurant Website</h3>
+                    <p>An engaging restaurant website featuring menus, chef profiles, and customer reviews designed to delight users.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Online Course Page</h3>
+                    <p>A user-friendly e-learning page with clear course description, lesson list, instructor info, and enrollment option.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">AI & Machine Learning</span>
+                <span class="skill">Web Development</span>
+                <span class="skill">Portfolio Design</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-info">
+            <h2>Contact Me</h2>
+            <p> Email: <a href="mailto:mmuhammadsuhail234@gmail.com">mmuhammadsuhail234@gmail.com</a></p>
+            <p> Mobile: <a href="tel:+923171207940">0317-1207940</a></p>
+            <p> WhatsApp: <a href="https://wa.me/923171207940" target="_blank">0317-1207940</a></p>
+            <p> LinkedIn: <a href="https://www.linkedin.com/in/muhammad-suhail-shaikh-1866ab275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Connect with me</a></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Muhammad Suhail. All rights reserved.
+    </footer>
+
+</body>
+</html>
